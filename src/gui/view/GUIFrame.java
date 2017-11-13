@@ -19,7 +19,7 @@ public class GUIFrame extends JFrame
 		this.setContentPane(firstPanel);
 		this.setTitle("Color Changer");
 		this.setSize(500, 500);
-		//this.setResizable(false);
+		this.setResizable(false);
 		this.setVisible(true);
 	}
 }

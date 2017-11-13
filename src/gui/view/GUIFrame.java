@@ -17,7 +17,7 @@ public class GUIFrame extends JFrame
 	private void setupFrame() 
 	{
 		this.setContentPane(firstPanel);
-		this.setTitle("Santa Bot");
+		this.setTitle("Color Changer");
 		this.setSize(500, 500);
 		//this.setResizable(false);
 		this.setVisible(true);

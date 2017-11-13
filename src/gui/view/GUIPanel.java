@@ -17,10 +17,11 @@ public class GUIPanel extends JPanel
 	{
 		super();
 		this.appController = appController;
-		firstButton = new JButton("WOW a button");
+		firstButton = new JButton("Click for color");
 		baseLayout = new SpringLayout();
 		setupPanel();
 		setupLayout();
+		setupListeners();
 	}
 	/**
 	 * Used to install all components to the subclass of JPanel
@@ -28,7 +29,7 @@ public class GUIPanel extends JPanel
 	 */
 	private void setupPanel()
 	{
-		this.setBackground(Color.red);
+		this.setBackground(Color.black);
 		this.setLayout(baseLayout);
 		this.add(firstButton);
 		//calls add method of the super class to add firstButton
@@ -45,8 +46,15 @@ public class GUIPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click) 
 			{
-				
+				changeBackgroundColor();
 			}
 		});
+	}
+	private void changeBackgroundColor()
+	{
+		int red = (int) (Math.random() * 255);
+		int green = (int) (Math.random() * 255);
+		int blue = (int) (Math.random() * 255);
+		this.setBackground(new Color(red, green, blue));
 	}
 }

@@ -32,7 +32,7 @@ public class GUIPanel extends JPanel
 		this.setBackground(Color.black);
 		this.setLayout(baseLayout);
 		this.add(firstButton);
-		//calls add method of the super class to add firstButton
+		//calls add method of the super class to add firstButton, firstButton was made in the constructor
 	}
 	private void setupLayout()
 	{
